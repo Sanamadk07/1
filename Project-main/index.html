@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Gandaki Airline Home Page</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontAwesome.css">
+    <link rel="stylesheet" href="css/owl-carousel.css">
+    <link rel="stylesheet" href="css/tooplate-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+</head>
+
+<body>
+    <section class="banner" id="top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="left-side">
+                        <div class="logo">
+                            <img src="img/logo12.png" alt="Flight Template">
+                        </div>
+                        <div class="tabs-content">
+                            <h4>Choose Your Direction:</h4>
+                            <ul class="social-links">
+                                <li><a href="#">Find us on <em>Facebook</em><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#">Our <em>YouTube</em> Channel<i class="fa fa-youtube"></i></a></li>
+                                <li><a href="#">Follow our <em>instagram</em><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="page-direction-button">
+                            <a href="contact.html"><i class="fa fa-phone"></i>Contact Us Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-md-offset-1">
+                    <section id="first-tab-group" class="tabgroup">
+                        <div id="tab1">
+                            <div class="submit-form">
+                                <h4>Check availability for <em>direction</em>:</h4>
+                                <form id="form-submit" action="#" method="">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <fieldset>
+                                                <label for="from"> <b>From:</b> </label>
+                                                <select required name='from' id="from">
+                                                    <option value="">Select a location...</option>
+                                                    <option value="Dhangadi">Dhangadi</option>
+                                                    <option value="Kathmandu">Kathmandu</option>
+                                                    <option value="Pokhara">Pokhara</option>
+                                                    <option value="Lukla">Lukla</option>
+                                                    <option value="Nepalgunj">Nepalgunj</option>
+                                                    <option value="Ilam">Ilam</option>
+                                                    <option value="Jomsom">Jomsom</option>
+                                                    <option value="Simikot">Simikot</option>
+                                                    <option value="Jumla">Jumla</option>
+                                                </select>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <fieldset>
+                                                <label for="to"><b>To:</b></label>
+                                                <select required name='to' id="to">
+                                                    <option value="">Select a location...</option>
+                                                    <option value="Dhangadi">Dhangadi</option>
+                                                    <option value="Kathmandu">Kathmandu</option>
+                                                    <option value="Pokhara">Pokhara</option>
+                                                    <option value="Lukla">Lukla</option>
+                                                    <option value="Nepalgunj">Nepalgunj</option>
+                                                    <option value="Ilam">Ilam</option>
+                                                    <option value="Jomsom">Jomsom</option>
+                                                    <option value="Simikot">Simikot</option>
+                                                    <option value="Jumla">Jumla</option>
+                                                </select>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <fieldset>
+                                                <label for="departure"><b>Departure date:</b></label>
+                                                <input name="departure" type="date" class="form-control date"
+                                                    id="departure" placeholder="Select date..." required="">
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <fieldset>
+                                                <label for="return"><b>Return date:</b></label>
+                                                <input name="return" type="date" class="form-control date" id="return"
+                                                    placeholder="Select date...">
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="radio-select">
+                                                <div class="row">
+                                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                                        <label for="round"><b>Round</b></label>
+                                                        <input type="radio" name="trip" id="round" value="round" >
+                                                    </div>
+                                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                                        <label for="oneway"><b>Oneway</b></label>
+                                                        <input type="radio" name="trip" id="oneway" value="oneway"
+                                                            onchange="setReadOnly()">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <fieldset>
+                                                <button type="submit" id="form-submit" class="btn"
+                                                    onclick="formSubmit();">Order Ticket Now</button>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    <section class="contact-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="heading">
+                        <h2> <b> Most Visited Places in Nepal </b> </h2>
+                    </div>
+                </div>
+                <div id="owl-mostvisited">
+                    <div class="item col-md-6">
+                        <img src="./img/p1.jpg" alt="" height="360px">
+                        <div class="text-content">
+                            <h4>Kathmandu Valley</h4>
+                            <span>It is popular with tourists for its unique architecture, and rich culture that includes the highest number of jatras (street festivals) in Nepal. Kathmandu valley itself was referred to as "Nepal Proper" by British historians.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item col-md-6">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="text-content">
+                        <h4>Fewa Lake</h4>
+                        <span>Phewa Lake, Phewa Tal or Fewa Lake is a freshwater lake in Nepal formerly called Baidam Tal located in the south of the Pokhara Valley that includes Pokhara city; parts of Sarangkot and Kaskikot.</span>
+                    </div>
+                </div>
+                <div class="item col-md-6">
+                    <img src="img/p4.jpg" alt="">
+                    <div class="text-content">
+                        <h4>Mount Everest</h4>
+                        <span>Mount Everest is Earth's highest mountain above sea level, located in the Mahalangur Himal sub-range of the Himalayas.The China–Nepal border runs across its summit point. Its elevation (snow height) of 8,848.86 m (29,031.7 ft) was most recently established in 2020 by the Chinese and Nepali authorities.</span>
+                    </div>
+                </div>
+                <div class="item col-md-6">
+                    <img src="img/p5.jpg">
+                    <div class="text-content">
+                        <h4>Rara Lake</h4>
+                        <span>Rara Lake was included as part of Rara National Park in 1976.In 1976, citizens of the two villages Chapra and Rara were resettled to Nepalgunj. In September 2007, it was declared as a Ramsar site, covering 1,583 ha (6.11 sq mi) including the surrounding wetland.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="primary-button">
+                        <a href="#" class="scroll-top">Back To Top</a>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <ul class="social-icons">
+                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-12">
+                    <p>Copyright &copy; 2022 Gandaki Airline Reservation <br>
+                        <b>Contact:+977-9876543210</b><br>Email:gandakiairline@gmail.com
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        function formSubmit() {
+            let a = document.getElementById("from").value
+            let b = document.getElementById("to").value
+            let c = document.getElementById("departure").value
+            let d = document.getElementById("return").value
+            let e = document.getElementsByName("trip").value
+            // let f = document.getElementById("oneway").value
+            if (a == "" && b == "" && c == ""   ) {
+                alert("Sorry select all item")
+            }
+            
+            else {
+                alert("You booked ticket from  " + a + " to " + b + " on " + c)
+                alert("Please Contact us for more information")
+            }
+
+
+        }
+
+function setReadOnly()
+{
+    if(document.getElementById('oneway').checked == true) {   
+        document.getElementById('return').type = 'hidden';
+         }
+}
+
+        // function formchange(this) {
+        //     let d = document.getElementById("return").value
+        //     let e = document.getElementById("round").value
+        //     let f = document.getElementById("oneway").value
+        // if(d.value=="yes"){
+        //     document.getElementById("round").checked= true;
+        //     document.getElementById("oneway").checked= false;
+        // }
+        // if(gen == "mrs"){
+        //     document.getElementById("female").checked= true;
+        //     document.getElementById("male").checked= false;
+        // }
+        //     var gen = document.getElementById("genderCheck").value;
+        // if(gen == "mr"){
+        //     document.getElementById("male").checked= true;
+        //     document.getElementById("female").checked= false;
+        // }
+        // if(gen == "mrs"){
+        //     document.getElementById("female").checked= true;
+        //     document.getElementById("male").checked= false;
+        // }
+
+        
+
+    </script>
+</body>
+
+</html>
